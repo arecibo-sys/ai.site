@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The AI Chronicles — Exploring the frontier of artificial intelligence, one discovery at a time.">
+  <title>The AI Chronicles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER / NAV
+  ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="site-logo">✦ The AI Chronicles</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#hero">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#topics">Topics</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound on/off">
+          <span class="sound-icon">🔊</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="toggle-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero" class="hero" aria-label="Hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 2026 &nbsp;·&nbsp; Intelligence Decoded</p>
+      <h1 class="hero-title">The AI<br>Chronicles</h1>
+      <p class="hero-subtitle">Exploring the frontier of artificial intelligence —<br>one discovery at a time.</p>
+      <a href="#topics" class="cta-btn">Explore Topics ↓</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FEATURED ARTICLE
+  ══════════════════════════════════════════ -->
+  <section id="featured" class="featured-section" aria-labelledby="featured-heading">
+    <p class="section-label">Featured Article</p>
+    <article class="featured-card">
+      <div class="featured-image">
+        <img
+          src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?auto=format&fit=crop&w=900&q=80"
+          alt="Abstract visualization of Large Language Models"
+          loading="lazy"
+        >
+      </div>
+      <div class="featured-content">
+        <span class="tag">Deep Dive</span>
+        <h2 id="featured-heading">Large Language Models</h2>
+        <p>
+          From GPT to Gemini, large language models have fundamentally transformed
+          how machines understand and generate human language. Discover the
+          transformer architecture, scaling laws, and the capabilities reshaping
+          our world — from code generation to scientific reasoning.
+        </p>
+        <a
+          href="https://www.google.com/search?q=Large+Language+Models"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="google-btn"
+          aria-label="Search Large Language Models on Google"
+        >
+          Search on Google <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TOPIC GRID
+  ══════════════════════════════════════════ -->
+  <section id="topics" class="topics-section" aria-labelledby="topics-heading">
+    <div class="section-header">
+      <h2 id="topics-heading" class="section-title">Explore AI Topics</h2>
+      <p class="section-subtitle">Click any topic to discover more on Google</p>
+    </div>
+
+    <div class="topics-grid">
+
+      <!-- Card 1: This Week in AI -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+            alt="This Week in AI News — code on screen"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>This Week in AI News & Models</h3>
+          <p>The latest releases, breakthroughs, and model launches shaping the AI landscape this week.</p>
+          <a href="https://www.google.com/search?q=AI+news+and+new+models+this+week&udm=50" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2: AGI -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80"
+            alt="Artificial General Intelligence — neural abstract"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>Artificial General Intelligence</h3>
+          <p>The quest to build machines capable of performing any intellectual task a human can — and beyond.</p>
+          <a href="https://www.google.com/search?q=Artificial+General+Intelligence" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3: AI Healthcare -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80"
+            alt="AI in Healthcare — medical technology"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>AI in Healthcare</h3>
+          <p>Revolutionizing diagnostics, drug discovery, and personalized medicine through intelligent algorithms.</p>
+          <a href="https://www.google.com/search?q=AI+in+Healthcare" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4: Robotics -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80"
+            alt="Robotics and Embodied AI — white robot"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>Robotics & Embodied AI</h3>
+          <p>Bridging digital intelligence with physical form — robots that learn, adapt, and act in the real world.</p>
+          <a href="https://www.google.com/search?q=Robotics+Embodied+AI" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5: AI Ethics -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=600&q=80"
+            alt="AI Ethics & Governance — scales of justice"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>AI Ethics & Governance</h3>
+          <p>Navigating bias, transparency, and accountability in the age of autonomous systems and AI policy.</p>
+          <a href="https://www.google.com/search?q=AI+Ethics+and+Governance" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6: Neural Architecture Search -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80"
+            alt="Neural Architecture Search — network of lights"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>Neural Architecture Search</h3>
+          <p>AI designing AI — automated systems that discover optimal neural network structures and topologies.</p>
+          <a href="https://www.google.com/search?q=Neural+Architecture+Search" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 7: Multimodal AI -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80"
+            alt="Multimodal AI — space data visualization"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>Multimodal AI</h3>
+          <p>Models that see, hear, read, and reason — unifying vision, language, audio, and beyond.</p>
+          <a href="https://www.google.com/search?q=Multimodal+AI+models" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 8: AI & Climate -->
+      <article class="topic-card">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1569163139394-de4e5f43e5ca?auto=format&fit=crop&w=600&q=80"
+            alt="AI and Climate — earth from above"
+            loading="lazy"
+          >
+        </div>
+        <div class="card-body">
+          <h3>AI & Climate</h3>
+          <p>Harnessing machine intelligence to model, mitigate, and adapt to our rapidly changing planet.</p>
+          <a href="https://www.google.com/search?q=AI+and+Climate+Change+Solutions" target="_blank" rel="noopener noreferrer" class="google-btn small">
+            Search on Google <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="footer-content">
+      <span class="footer-logo">✦ The AI Chronicles</span>
+      <span class="footer-copy">© 2026 &nbsp;·&nbsp; Exploring the frontier of intelligence</span>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════ -->
+  <script>
+    // ═══════════════════════════════════════════════════════════
+    //  SOUND ENGINE  (Web Audio API — no external files)
+    // ═══════════════════════════════════════════════════════════
+    let audioCtx     = null;
+    let soundEnabled = localStorage.getItem('sound') !== 'off'; // default ON
+
+    function getCtx() {
+      if (!audioCtx) {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        if (AC) audioCtx = new AC();
+      }
+      return audioCtx;
+    }
+
+    // Core tone generator — freq(Hz), wavetype, duration(s), volume(0-1), delay(s)
+    function tone(freq, type, duration, vol, delay = 0) {
+      if (!soundEnabled) return;
+      const ctx = getCtx();
+      if (!ctx) return;
+      try {
+        if (ctx.state === 'suspended') ctx.resume();
+        const osc  = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, ctx.currentTime + delay);
+        gain.gain.setValueAtTime(0, ctx.currentTime + delay);
+        gain.gain.linearRampToValueAtTime(vol, ctx.currentTime + delay + 0.009);
+        gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + delay + duration);
+        osc.start(ctx.currentTime + delay);
+        osc.stop(ctx.currentTime + delay + duration + 0.02);
+      } catch (e) {}
+    }
+
+    // ── Sound presets (all discrete / low volume) ─────────────
+    // Hover: feather-soft high ping
+    function soundHover()       { tone(1047, 'sine', 0.09, 0.025); }
+    // Click / link: soft mid chime
+    function soundClick()       { tone(784,  'sine', 0.14, 0.042); }
+    // Theme toggle: gentle two-note sequence
+    function soundThemeToggle() {
+      tone(523, 'sine', 0.12, 0.038);
+      tone(659, 'sine', 0.12, 0.038, 0.10);
+    }
+    // Sound turning ON: three-note ascending confirm
+    function soundSwitchOn() {
+      tone(440, 'sine', 0.10, 0.048);
+      tone(554, 'sine', 0.10, 0.048, 0.11);
+      tone(659, 'sine', 0.16, 0.048, 0.22);
+    }
+    // Sound turning OFF: single quiet fade-out (plays before disabling)
+    function soundSwitchOff()   { tone(440, 'sine', 0.22, 0.038); }
+
+    // ── Sound toggle button ───────────────────────────────────
+    const soundToggle = document.getElementById('soundToggle');
+    const soundIcon   = soundToggle.querySelector('.sound-icon');
+
+    function applySoundState(enabled) {
+      soundEnabled = enabled;
+      soundIcon.textContent = enabled ? '🔊' : '🔇';
+      soundToggle.setAttribute('aria-pressed', String(enabled));
+    }
+
+    applySoundState(soundEnabled);
+
+    soundToggle.addEventListener('click', () => {
+      if (soundEnabled) {
+        soundSwitchOff();
+        setTimeout(() => applySoundState(false), 180);
+      } else {
+        applySoundState(true);
+        soundSwitchOn();
+      }
+      localStorage.setItem('sound', soundEnabled ? 'on' : 'off');
+    });
+
+    // ═══════════════════════════════════════════════════════════
+    //  DARK / LIGHT MODE TOGGLE
+    // ═══════════════════════════════════════════════════════════
+    const themeToggle = document.getElementById('themeToggle');
+    const toggleIcon  = themeToggle.querySelector('.toggle-icon');
+    const htmlEl      = document.documentElement;
+
+    function applyTheme(theme) {
+      htmlEl.className = theme;
+      toggleIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
+    }
+
+    applyTheme(localStorage.getItem('theme') || 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      soundThemeToggle();
+      const next = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem('theme', next);
+    });
+
+    // ═══════════════════════════════════════════════════════════
+    //  INTERACTION SOUNDS — cards, buttons, nav links
+    // ═══════════════════════════════════════════════════════════
+    // Hover on topic cards & featured card
+    document.querySelectorAll('.topic-card, .featured-card').forEach(el => {
+      el.addEventListener('mouseenter', soundHover);
+    });
+
+    // Hover on nav links
+    document.querySelectorAll('.nav-links a').forEach(el => {
+      el.addEventListener('mouseenter', soundHover);
+    });
+
+    // Click on any google-btn or cta-btn
+    document.querySelectorAll('.google-btn, .cta-btn').forEach(el => {
+      el.addEventListener('click', soundClick);
+    });
+
+    // ═══════════════════════════════════════════════════════════
+    //  SMOOTH SCROLL for anchor links
+    // ═══════════════════════════════════════════════════════════
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
+</body>
+</html>
