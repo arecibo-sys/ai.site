@@ -324,12 +324,15 @@
     soundToggle.addEventListener('click', () => {
       if (soundEnabled) {
         soundSwitchOff();
-        setTimeout(() => applySoundState(false), 180);
+        setTimeout(() => {
+          applySoundState(false);
+          localStorage.setItem('sound', 'off');
+        }, 180);
       } else {
         applySoundState(true);
         soundSwitchOn();
+        localStorage.setItem('sound', 'on');
       }
-      localStorage.setItem('sound', soundEnabled ? 'on' : 'off');
     });
 
     // ═══════════════════════════════════════════════════════════
